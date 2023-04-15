@@ -1,21 +1,15 @@
 package kaloriaSzamolas;
 
 public final class Kaloria {
-    private final String nev;
     private double napiKaloria;
+    private final String nev;
 
     public Kaloria(String nev) {
         this.nev = nev;
         this.napiKaloria=0;
     }
 
-    public String getNev() {
-        return nev;
-    }
 
-    public double getNapiKaloria() {
-        return napiKaloria;
-    }
 
 
     public void taplalkozas(int kcal){
