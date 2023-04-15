@@ -12,9 +12,6 @@ public final class Menu {
     private final String menupont5;
     static Scanner scanner = new Scanner(System.in);
 
-    private void createKaloriaInstance() {
-
-    }
 
     public void showMenu(String nev,Kaloria kaloria) {
         char menu;
@@ -40,7 +37,6 @@ public final class Menu {
         this.menupont4 = menupont4;
         this.menupont5 = menupont5;
         this.nev = nev;
-        createKaloriaInstance();
     }
 
     public void selectMenupont(char menu, Kaloria kaloria) {
