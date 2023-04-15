@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public final class Menu {
     private String nev;
-    private Kaloria kaloria;
     private final String menupont1;
     private final String menupont2;
     private final String menupont3;
@@ -16,7 +15,6 @@ public final class Menu {
     public void showMenu(String nev,Kaloria kaloria) {
         char menu;
         this.nev = nev;
-        this.kaloria = kaloria;
         System.out.println(menupont1);
         System.out.println(menupont2);
         System.out.println(menupont3);

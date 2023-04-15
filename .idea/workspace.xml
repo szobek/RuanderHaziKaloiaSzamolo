@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67c3a03d-f165-4330-a762-1d6ca13ec42d" name="Changes" comment="modify kaloria class">
+    <list default="true" id="67c3a03d-f165-4330-a762-1d6ca13ec42d" name="Changes" comment="remove unused method in menu class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kaloriaSzamolas/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kaloriaSzamolas/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +93,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681550002999</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="modify menu class">
+      <created>1681581634863</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681581634863</updated>
+    </task>
+    <task id="LOCAL-00006" summary="remove unused method in menu class">
+      <created>1681581729564</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681581729564</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +126,8 @@
     <MESSAGE value="modify menu" />
     <MESSAGE value="bugfix in menu" />
     <MESSAGE value="modify kaloria class" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify kaloria class" />
+    <MESSAGE value="modify menu class" />
+    <MESSAGE value="remove unused method in menu class" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove unused method in menu class" />
   </component>
 </project>
