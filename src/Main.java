@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args)  {
         System.out.print("Adja meg a nevet: ");
         nev = scanner.nextLine();
-        Menu menu = new Menu("1-sport","2-pihenés","3-evés","4-napi érték","5-kilépés",nev);
+        Menu menu = new Menu("1 - sport","2 - pihenés","3 - evés","4 - napi érték","5 - kilépés",nev);
         menu.showMenu(nev);
         scanner.close();
 
