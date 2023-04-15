@@ -13,12 +13,13 @@ public final class Menu {
     static Scanner scanner = new Scanner(System.in);
 
     private void createKaloriaInstance() {
-        this.kaloria = new Kaloria(this.nev);
+
     }
 
-    public void showMenu(String nev) {
+    public void showMenu(String nev,Kaloria kaloria) {
         char menu;
         this.nev = nev;
+        this.kaloria = kaloria;
         System.out.println(menupont1);
         System.out.println(menupont2);
         System.out.println(menupont3);
@@ -47,28 +48,28 @@ public final class Menu {
             case '1' -> {
                 System.out.print("Hány óra sport? ");
                 kaloria.sportolas(Double.parseDouble(scanner.nextLine()));
-                showMenu(this.nev);
+                showMenu(this.nev,kaloria);
             }
             case '2' -> {
                 System.out.print("Hány óra pihenés? ");
                 kaloria.pihenes(Double.parseDouble(scanner.nextLine()));
-                showMenu(this.nev);
+                showMenu(this.nev,kaloria);
             }
             case '3' -> {
                 System.out.print("Mennyi kcal-t evett? ");
                 kaloria.taplalkozas(Integer.parseInt(scanner.nextLine()));
-                showMenu(this.nev);
+                showMenu(this.nev,kaloria);
             }
             case '4' -> {
                 kaloria.napiErtek();
-                showMenu(this.nev);
+                showMenu(this.nev,kaloria);
             }
             case '5' -> {
 
             }
             default -> {
                 System.out.println("Ismeretlen menü");
-                showMenu(this.nev);
+                showMenu(this.nev,kaloria);
             }
         }
     }

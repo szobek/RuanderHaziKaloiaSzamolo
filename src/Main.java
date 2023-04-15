@@ -1,3 +1,4 @@
+import kaloriaSzamolas.Kaloria;
 import kaloriaSzamolas.Menu;
 
 import java.io.IOException;
@@ -10,7 +11,8 @@ public class Main {
         System.out.print("Adja meg a nevet: ");
         nev = scanner.nextLine();
         Menu menu = new Menu("1 - sport","2 - pihenés","3 - evés","4 - napi érték","5 - kilépés",nev);
-        menu.showMenu(nev);
+        Kaloria kaloria=new Kaloria(nev);
+        menu.showMenu(nev,kaloria);
         scanner.close();
 
     }
