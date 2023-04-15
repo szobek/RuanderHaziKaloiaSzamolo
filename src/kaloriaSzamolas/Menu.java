@@ -27,7 +27,7 @@ public final class Menu {
         do {
             System.out.println("\n\nAdja meg a menüpontot: ");
             menu = scanner.nextLine().replace(',', '.').charAt(0);
-        } while (menu < 5 && menu >= 1);
+        } while (menu <= 5 && menu >= 1);
         selectMenupont(menu, kaloria);
 
     }
@@ -47,17 +47,21 @@ public final class Menu {
             case '1' -> {
                 System.out.print("Hány óra sport? ");
                 kaloria.sportolas(Double.parseDouble(scanner.nextLine()));
+                showMenu(this.nev);
             }
             case '2' -> {
                 System.out.print("Hány óra pihenés? ");
                 kaloria.pihenes(Double.parseDouble(scanner.nextLine()));
+                showMenu(this.nev);
             }
             case '3' -> {
                 System.out.print("Mennyi kcal-t evett? ");
                 kaloria.taplalkozas(Integer.parseInt(scanner.nextLine()));
+                showMenu(this.nev);
             }
             case '4' -> {
                 kaloria.napiErtek();
+                showMenu(this.nev);
             }
             case '5' -> {
 
@@ -67,6 +71,5 @@ public final class Menu {
                 showMenu(this.nev);
             }
         }
-        showMenu(this.nev);
     }
 }
